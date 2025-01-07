@@ -11,8 +11,8 @@ def preprocess_text(text):
 	text = text.lower()
 	text = re.sub(r'[^\w\s-]', ' ', text)
 	doc = nlp(text)
-	# get stopwords
-	# nltk.download('stopwords') asta trb rulat doar o data
+	#get stopwords
+	#nltk.download('stopwords')# asta trb rulat doar o data
 	stop_words = set(stopwords.words('english'))
 
 	# fara stopwords, tinem doar substantive, adjective si verbe, lematizam cuvintele, le scoatem si pe alea scurte
